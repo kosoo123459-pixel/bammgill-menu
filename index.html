@@ -23,6 +23,7 @@
     --side: #5D5378;
     --drink: #2F5E4B;
     --hot: #C2402F;
+    --rec: #B35E2C;
   }
   /* 어두운 매장에서 눈부시지 않도록 폰이 다크 모드면 자동으로 어둡게 */
   @media (prefers-color-scheme: dark) {
@@ -36,6 +37,7 @@
       --side: #584E73;
       --drink: #2C5A48;
       --hot: #F07A62;
+      --rec: #F0A070;
     }
   }
 
@@ -107,6 +109,7 @@
     font-size: 12px; font-weight: 700; vertical-align: 2px;
     color: var(--hot); background: color-mix(in srgb, var(--hot) 13%, transparent);
   }
+  .tag.rec { color: var(--rec); background: color-mix(in srgb, var(--rec) 14%, transparent); }
 
   footer {
     margin-top: 36px; padding-top: 20px; border-top: 1px solid var(--line);
@@ -158,7 +161,8 @@
         <li class="item"><span class="name">마라크림 수제비</span><span class="price">18,000<small>원</small></span></li>
         <li class="item"><span class="name">토마토 해장 파스타</span><span class="price">16,000<small>원</small></span></li>
         <li class="item"><span class="name">미역국 크림 파스타</span><span class="price">16,000<small>원</small></span></li>
-        <li class="item"><span class="name">사천 돼지껍데기<span class="tag">매운맛</span></span><span class="price">17,000<small>원</small></span></li>
+        <li class="item"><span class="name">사천 돼지껍데기<span class="tag rec">추천</span><span class="tag">매운맛</span></span><span class="price">17,000<small>원</small></span></li>
+        <li class="item"><span class="name">돼지꼬리찜<span class="tag rec">추천</span></span><span class="price">23,000<small>원</small></span></li>
       </ul>
     </section>
 
